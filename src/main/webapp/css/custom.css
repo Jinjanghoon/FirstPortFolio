@@ -1,0 +1,107 @@
+
+/* 메인 & JSP게시판 관련 css 부분 시작 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+	font-family : 'Nanum Gothic';
+} 
+
+a {
+	text-decoration: none;
+}
+
+.main_button {
+	color:#ababab;
+	
+}
+
+.main_button:hover {
+	text-decoration: none;
+	transition: 1s;
+	color: black;
+}
+.main_view {
+	font-size: 10px;	
+}
+
+.box_form {
+	text-align: center;
+}
+
+
+.first_c_link {
+	display: inline-block;
+	width: 30%;
+	height: 425px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #e8e8e8;
+	background-color:#e8e8e8;
+	text-align: center;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	
+}
+
+.first_c_link > h3 {
+	
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* 그림자 옵션 설정 */
+	color:#ababab;
+	transition: color 1s; /* 색상 변화를 1초 동안 진행 */
+}
+
+.first_c_link > h3:hover {
+	color:#ababab;
+}
+
+.box_form > a {
+	text-decoration: none;
+}
+
+.box_form img {
+	width: 80%;
+	height: 80%;
+	transition: filter 0.5s;
+}
+
+
+
+.grid_image {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.grid_text {
+  display: none;
+  text-align: center;
+}
+
+.first_c_link:hover .grid_image {
+  opacity: 0;
+}
+
+.first_c_link:hover .grid_text {
+  display: inline-block;
+}
+
+
+/* 메인 & JSP게시판 관련 css 부분 끝 */
+
+/* 웨딩 관련 CSS 시작 */
+.wedding_infobox {
+	text-align: center;
+}
+
+.wedding_img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+/* 웨딩 관련 CSS 끝 */
+
+
+/* first.jsp 로 이동하기위한 버튼css*/
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

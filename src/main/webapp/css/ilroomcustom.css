@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+	font-family : 'Nanum Gothic';
+} 
+/* nav start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: #ededed;
+  color: #fff;
+  position: fixed;  /* 고정시키기 */
+  top: 0;           /* 맨 위쪽에 위치하도록 설정 */
+  width: 100%;      /* 화면 전체 너비를 사용하도록 설정 */
+  z-index: 100;     /* 다른 요소들보다 앞에 나타나도록 설정 */
+}
+
+.navbar_links {
+  margin-right: 20px;
+}
+
+.navbar_links a {
+  color: #666666;
+  text-decoration: none;
+  margin-left: 50px;  /* 오른쪽 대신 왼쪽 마진을 추가하여 링크 간 간격을 설정 */
+}
+
+.navbar_links a:first-child {
+  margin-left: 0;     /* 첫 번째 링크는 마진을 설정하지 않음 */
+}
+
+.logo {
+	width:70px;
+}
+
+/* nav end */
+
+/* img div start */
+.top-banner {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+}
+
+.top-banner h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+
+.image-slider {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 33.333%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+.active-slide {
+  transform: translateX(0%);
+}
+
+.prev-slide {
+  transform: translateX(-100%);
+}
+
+.next-slide {
+  transform: translateX(100%);
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 1em;
+}
+
+.next-btn {
+  right: 1em;
+}
+
+/* img div end */
+
+/* product img start */
+
+.product-title {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1650px;
+	margin: 0 auto;
+	min-width: 1400px;
+}
+
+.image-item {
+	width: 18%;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.image-item a {
+	text-decoration: none;
+}
+
+.image-item a h3:hover {
+	transition: color 1s ease;
+	color:#333333;
+}
+.image-item img {
+	display: block;
+	width: 250px;
+	height: 200px;
+}
+
+.caption {
+	width:250px;
+	padding: 10px;
+	text-align: center;
+	
+}
+
+.caption h3 {
+	margin-top: 0;
+	text-align: center;
+	color:#6b6b6b;
+	font-size:15px;
+}
+
+.caption p {
+	margin-bottom: 0;
+	text-align: center;
+	color:#ff5c5c;
+}
+
+
+/* product img end */
+
+/* banner img start */
+
+.image-container {
+  display: flex;
+  gap: 20px;
+  margin-left:40px;
+}
+
+.image-container a {
+  width: 50%;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container a {
+	margin-right: 20px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.two-banner {
+	width: 100%;
+	height: 100%;
+	margin-top:30px;
+}
+
+.banner-img {
+	width: 469px;
+	height: 339px;
+	margin-top:30px;
+	transition: transform 1s ease;
+}
+
+.banner-img:hover {
+	transform: scale(1.1);
+}
+/* banner img end */
+
+/* footer start */
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.company-info {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.company-info h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color:#ff5c5c;
+}
+
+.company-info p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+/* footer end */
